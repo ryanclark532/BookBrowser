@@ -1,0 +1,7 @@
+<mat-card class="container">
+  <h1>{{ name }}</h1>
+  <h2>{{ author }}</h2>
+  <mat-checkbox #c [checked]="completed" (change)="onChange(!c.checked)"
+    >Completed</mat-checkbox
+  >
+</mat-card>

@@ -1,0 +1,11 @@
+.button {
+  margin: 10px;
+  width: 233px;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+}

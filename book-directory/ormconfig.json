@@ -1,0 +1,11 @@
+{
+  "type": "mssql",
+  "host": "localhost",
+  "port": 1433,
+  "username": "sa",
+  "password": "Ryan1234",
+  "database": "bookdb",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true,
+  "options": { "trustServerCertificate": true }
+}

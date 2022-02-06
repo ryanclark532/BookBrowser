@@ -1,0 +1,32 @@
+<form (ngSubmit)="formSubmit()">
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input
+        matInput
+        [(ngModel)]="title"
+        [ngModelOptions]="{standalone: true}"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Author</mat-label>
+      <input
+        matInput
+        [(ngModel)]="author"
+        [ngModelOptions]="{standalone: true}"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <button
+      mat-raised-button
+      [mat-dialog-close]="true"
+      cdkFocusInital
+      type="submit"
+    >
+      Add Book
+    </button>
+  </p>
+</form>

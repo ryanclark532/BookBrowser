@@ -1,0 +1,17 @@
+<div class="container">
+  <app-book
+    *ngFor="let book of books"
+    [id]="book.id"
+    [name]="book.name"
+    [author]="book.author"
+    [completed]="book.isRead"
+  ></app-book>
+  <button
+    mat-raised-button
+    color="primary"
+    class="button"
+    (click)="openDialog()"
+  >
+    New Book
+  </button>
+</div>
